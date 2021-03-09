@@ -37,7 +37,7 @@ server.port=8090
 
 Go to Run As -> Maven Build.
 
-For Goal, type in `spring-boot-run`
+For Goal, type in `spring-boot:run`
 
 It should run itself on the port specified (8090 in this case).  You will need to randomly stop using the red button in eclipse once we are done testing.
 

@@ -22,17 +22,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 @Controller
 public class MainController {
 	
+
+	@Autowired
+	CustomEventPublisher cvp;
+	
+	@RequestMapping(value="/", method = RequestMethod.GET)
+    public String showIndexPage(ModelMap model){
+            return "index";
+    }
+
+	
     @RequestMapping(value = "/customevent", method = RequestMethod.GET)
     public String customEvent(ModelMap map)
     {
-            String confFile = "main-servlet.xml";
-        ApplicationContext context = new ClassPathXmlApplicationContext(confFile);
-        CustomEventPublisher cvp =
-                (CustomEventPublisher) context.getBean("customEventPublisher");
-             
-         cvp.publish();  
-         cvp.publish();
-        return "customEvent";
+        cvp.publish();  
+        cvp.publish();
+        return "customevent";
     }
 
 

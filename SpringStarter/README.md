@@ -16,6 +16,27 @@ It will download a zip file.  You may unpack the zip file into your github.
 Open eclipse and say Import -> Maven Project.
 Navigate to the location of the unzipped Spring Initializr.
 
+
+## Add some extra dependencies to `pom.xml` file
+
+```xml
+	<dependency> 
+		<groupId>javax.servlet</groupId> 
+		<artifactId>jstl</artifactId>
+ 		<version>1.2</version> 
+	</dependency>
+			
+
+        <dependency>
+             <groupId>org.apache.tomcat.embed</groupId>
+             <artifactId>tomcat-embed-jasper</artifactId>
+             <scope>provided</scope>
+        </dependency>
+		
+````	 
+
+You may need to use eclipse to "Reload Maven" after changing the pom.xml
+
 ## Edit the Application Properties file.
 
 You need to edit the `src/main/resources/application.properties`
@@ -30,6 +51,24 @@ spring.datasource.username=springuser
 spring.datasource.password=ThePassword
 
 server.port=8090
+
+```
+
+## Add index.jsp file to the project.
+
+Create the following folder
+
+`SpringSetup/src/main/webapp/WEB-INF/jsp/index.jsp`
+
+Add in a small jsp file in that folder
+
+```html
+<html>
+<body>
+<h2>Spring Application</h2>
+
+</body>
+</html>
 
 ```
 

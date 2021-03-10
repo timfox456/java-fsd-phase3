@@ -50,13 +50,17 @@ spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
 spring.datasource.username=springuser
 spring.datasource.password=ThePassword
 
+
+logging.level.org.springframework.web: DEBUG
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
 server.port=8090
 
 ```
 
 ## Add index.jsp file to the project.
 
-Create the following folder
+Create the following file/folder
 
 `SpringSetup/src/main/webapp/WEB-INF/jsp/index.jsp`
 

@@ -27,4 +27,8 @@ As a part of developing an ecommerce web application, the admin backend requires
  *  Once the edit form is submitted, the controller will update the details in the database. A confirmation JSP page will be shown
  *  Follow the standard methodology of creating controllers, services, dao, and entity classes
  *  Document the step-by-step process involved in completing this task
+
+### Info
+
+ * Due Date: 2021-03-16
  

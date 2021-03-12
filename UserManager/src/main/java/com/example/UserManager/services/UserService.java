@@ -32,6 +32,7 @@ public class UserService {
     public User GetUserById(int id) {
     	Optional<User> foundUser = userRepository.findById(id);
     	
+    	
     	//TODO: we need to decide how to handle a "Not Found" condition
     	return(foundUser.get());
     }

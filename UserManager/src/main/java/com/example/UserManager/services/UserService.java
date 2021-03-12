@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.UserManager.entities.User;
+import com.example.UserManager.exceptions.UserNotFoundException;
 import com.example.UserManager.repositories.UserRepository;
 
 
@@ -34,6 +35,11 @@ public class UserService {
     	
     	
     	//TODO: we need to decide how to handle a "Not Found" condition
+    	
+    	if (!foundUser.isPresent()) {
+    		throw new UserNotFoundException();
+    	}
+    	
     	return(foundUser.get());
     }
     

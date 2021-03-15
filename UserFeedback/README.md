@@ -31,6 +31,25 @@ As a part of developing an ecommerce web application, a REST resource is needed 
  *  The step-by-step process involved in completing this task should be documented
 
 
+### Using CURL or Postman
+
+ You can test your service using curl or Postman.  Here is an example:
+
+```console
+curl -X GET http://localhost:8090/feedback
+[{"id":1,"comments":"Awesome","rating":10,"user":"tim"},{"id":2,"comments":"Also Awesome","rating":10,"user":"tim"},{"id":3,"comments":"Awesome","rating":10,"user":"tim"}]%
+```
+
+You can also use CURL or postman to do a POST for adding feedback.  Here's how you can test this:
+
+```console
+curl -X POST localhost:8090/feedback -H 'Content-type:application/json' -d '{"id":1,"comments":"Awesome","rating":10,"user":"tim"}'
+```
+
+You can also use the GUI app POSTman if you prefer.
+
+
+
 ### Hints:
 
 You can optionally use  the following sql syntax to create a table with some sample data

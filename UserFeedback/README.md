@@ -11,14 +11,14 @@ Create a Spring Boot project that will capture user feedback using a REST endpoi
 As a part of developing an ecommerce web application, a REST resource is needed to capture user feedback. Feedback data will be received from third-party apps and websites. The data will be sent to the REST API which will collect feedback from various sources.
 
 
-You must use the following:
+### You must use the following:
 
  *  Eclipse as the IDE
  *  Apache Tomcat as the web server
  *  Spring Boot with Hibernate
 
 
-Following requirements should be met:
+### Following requirements should be met:
 
  *  Create a MySQL table named feedback for storing feedback data
  *  An entity class Feedback should be made with annotations to link it with the feedback table
@@ -29,4 +29,33 @@ Following requirements should be met:
     - This can be a purely client-side code form (html/css/js) -- recommend using the [javascript `request` library](https://github.com/request/request)
     - Or it could be a server-side JSP
  *  The step-by-step process involved in completing this task should be documented
+
+
+### Hints:
+
+You can optionally use  the following sql syntax to create a table with some sample data
+
+ * Create Table:
+
+```sql
+use db_example;
+CREATE TABLE `feedback` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `comments` varchar(255) DEFAULT NULL,
+  `rating` int NOT NULL,
+  `user` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ;
+
+```
+
+ * Insert:
+
+```sql
+
+use db_example;
+insert into feedback (comments, rating, user) VALUES ("Awesome", 10, "tim");
+insert into feedback (comments, rating, user) VALUES ("Awesome 2", 10, "tim");
+insert into feedback (comments, rating, user) VALUES ("Awesome 3", 10, "tim");
+```
  

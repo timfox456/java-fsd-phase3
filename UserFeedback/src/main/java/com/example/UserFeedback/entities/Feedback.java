@@ -12,7 +12,7 @@ import lombok.Data;
 public class Feedback {
 
 	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 	private String comments;
 	private int rating;

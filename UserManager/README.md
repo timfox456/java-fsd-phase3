@@ -38,6 +38,30 @@ Here is a potential list of JSPs for the project. (feel free to modify)
  * Edit form for User
  * Confirmation JSP
 
+
+
+### SQL
+
+Here is some SQL (not required) that you **could** use if you want to:
+
+```sql
+use my_database;
+CREATE TABLE `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_c
+```
+
+```sql
+insert into user (email, name, password) VALUES ("tim@gmail.com", "Tim", "password");
+insert into user (email, name, password) VALUES ("mary@gmail.com", "Mary", "password");
+insert into user (email, name, password) VALUES ("lee@gmail.com", "Lee", "password");
+```
+
+
 ### Info
 
  * Due Date: 2021-03-16

@@ -3,8 +3,12 @@ package com.example.RestExample.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +37,12 @@ public class UserController {
         return userService.GetAllUsers();
     }
 	
+	@PostMapping("/users")
+	User newUser(@RequestBody User newUser) {
+		return userService.CreateUser(newUser);
+
+	}
+	
 	@GetMapping("/users/{id}")
 	public @ResponseBody User getUserById(@PathVariable int id) {
 		
@@ -40,5 +50,17 @@ public class UserController {
 
 		return userService.GetUserById(id);
 	}
+	
+	@PutMapping("/users/{id}")
+	User replaceUser(@RequestBody User newUser, @PathVariable Integer id) {
+		return userService.UpdateUser(newUser, id);
+	}
+	
+	@DeleteMapping("/users/{id}")
+	void deleteUser(@PathVariable Integer id) {
+		userService.deleteUser(id);
+	}
+	
+	
 
 }

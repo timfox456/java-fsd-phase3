@@ -42,6 +42,29 @@ public class UserService {
     	return(foundUser.get());
     }
     
+    public User CreateUser(User newUser)
+    {
+    	return userRepository.save(newUser);
+    }
+    
+    public User UpdateUser(User newUser, Integer id) {
+    	return userRepository.findById(id)
+    		      .map(user -> {
+    		        user.setName(newUser.getName());
+    		        user.setPassword(newUser.getPassword());
+    		        user.setEmail(newUser.getEmail());
+    		        return userRepository.save(user);
+    		      })
+    		      .orElseGet(() -> {
+    		        newUser.setId(id);
+    		        return userRepository.save(newUser);
+    		      });
+    }
+    
+    public void deleteUser(Integer id) {
+    	userRepository.deleteById(id);
+    }
+    
 
 
 }

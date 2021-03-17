@@ -23,8 +23,10 @@ You must use the following:
 Following requirements should be met:
 
  *  Create a Spring Boot Project
- *  Create an authentication class that has all the methods related to user authentication
- *  Create a JUnit test class to create unit tests for the authentication class
+ *  Create a set of business classes that  that has all the methods related to user authentication
+ *  Create a view/controller in Spring MVC to perform a basic UI function related to User Authentication. 
+ *  Create a JUnit test class to create unit tests for business logic classes.
+    - There is no need to directly test the Spring MVC view or controllers.
  *  Run the test class directly as a JUnit and check if all the tests pass
  *  Document the step-by-step process involved in completing this task
 

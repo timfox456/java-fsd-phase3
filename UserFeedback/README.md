@@ -26,7 +26,7 @@ As a part of developing an ecommerce web application, a REST resource is needed 
  *  Create a REST controller class to create the REST endpoint. It should take in parameters using the POST protocol
  *  Data received in the REST controller will be then saved into the database
  *  Create a test form in HTML to submit data to the REST endpoint to ensure it’s working
-    - This can be a purely client-side code form (html/css/js) -- recommend using the [javascript `request` library](https://github.com/request/request)
+    - This can be a purely client-side code form (html/css/js) -- recommend using the [javascript `fetch` library](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
     - Or it could be a server-side JSP
  *  The step-by-step process involved in completing this task should be documented
 

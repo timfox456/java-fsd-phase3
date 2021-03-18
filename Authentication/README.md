@@ -28,6 +28,7 @@ Following requirements should be met:
     - You can use any Spring View or Controller for this; JSP/Thymeleaft/ etc.  
     - The point of creating the view controller is just to get it working; it won't be tested
     - You may also use MySQL to implement the app but it is not required.
+    - Requirements for the application will be similar to [Phase 2 End Project](https://github.com/timfox456/java-fsd-phase2/tree/main/phase-end-project)
  *  Create a JUnit test class to create unit tests for business logic classes.
     - There is no need to directly test the Spring MVC view or controllers.
  *  You should have at least 1 unit test for each of the following:

@@ -48,6 +48,21 @@ curl -X POST localhost:8090/feedback -H 'Content-type:application/json' -d '{"co
 
 You can also use the GUI app POSTman if you prefer.
 
+ * Start Postman, open a new tab.
+ * Select "POST". Enter the URL `http://localhost:8090/feedback`
+ * Click on "Body"
+ * Click on the "Raw" radio Button
+ * Select JSON from the dropdown.
+ * Enter the following JSON in the box:
+
+```json
+{
+        "comments" : "Awesome",
+        "rating" : 10,
+        "user" : "Tim"
+}
+```
+
 
 
 ### Hints:

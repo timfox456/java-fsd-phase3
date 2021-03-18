@@ -30,6 +30,10 @@ Following requirements should be met:
     - You may also use MySQL to implement the app but it is not required.
  *  Create a JUnit test class to create unit tests for business logic classes.
     - There is no need to directly test the Spring MVC view or controllers.
+ *  You should have at least 1 unit test for each of the following:
+    - Every method in your service classes
+    - Every method in the repository classes that is invoked anywhere in the application (probably mostly in services)
+    - Do some tests that directly involve using MySQL (if you use it).
  *  Run the test class directly as a JUnit and check if all the tests pass
  *  Document the step-by-step process involved in completing this task
 

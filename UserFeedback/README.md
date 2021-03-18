@@ -43,7 +43,7 @@ curl -X GET http://localhost:8090/feedback
 You can also use CURL or postman to do a POST for adding feedback.  Here's how you can test this:
 
 ```console
-curl -X POST localhost:8090/feedback -H 'Content-type:application/json' -d '{"id":1,"comments":"Awesome","rating":10,"user":"tim"}'
+curl -X POST localhost:8090/feedback -H 'Content-type:application/json' -d '{"comments":"Awesome","rating":10,"user":"tim"}'
 ```
 
 You can also use the GUI app POSTman if you prefer.

@@ -28,6 +28,10 @@ As a part of developing an ecommerce web application, a REST resource is needed 
  *  Create a test form in HTML to submit data to the REST endpoint to ensure it’s working
     - This can be a purely client-side code form (html/css/js) -- recommend using the [javascript `fetch` library](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
     - Or it could be a server-side JSP
+ * Data should be validated in the service so user should not be able to empty or whitespace data.
+    - primarily this shuld be done at the rest service level
+    - optionally may also add client-side validation in the test form.
+    - invalid data should be responded to with 400 or 422 error code.
  *  The step-by-step process involved in completing this task should be documented
 
 
@@ -47,7 +51,6 @@ curl -X POST localhost:8090/feedback -H 'Content-type:application/json' -d '{"co
 ```
 
 You can also use the GUI app POSTman if you prefer.
-
  * Start Postman, open a new tab.
  * Select "POST". Enter the URL `http://localhost:8090/feedback`
  * Click on "Body"

@@ -27,7 +27,7 @@ As a part of developing an ecommerce web application, a REST resource is needed 
  *  Data received in the REST controller will be then saved into the database
  *  Create a test form in HTML to submit data to the REST endpoint to ensure it’s working
     - This can be a purely client-side code form (html/css/js) -- recommend using the [javascript `fetch` library](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-    - Or it could be a server-side JSP
+    - Or it could be a server-side JSP which invokes a resttemplate similar to [this](https://github.com/timfox456/java-fsd-phase3/blob/main/RestExample/src/main/java/com/example/RestExample/services/QuoteService.java).
  * Data should be validated in the service so user should not be able to empty or whitespace data.
     - primarily this shuld be done at the rest service level
     - optionally may also add client-side validation in the test form.

@@ -18,6 +18,11 @@ Following requirements should be met:
    * A few of the source code should be tracked on GitHub repositories. You need to document the tracked  files which are ignored during the final push to the GitHub repository.
    * The submission of your GitHub repository link  is mandatory. In order to track your task, you need to share the link of the repository in the document. 
    * The step-by-step process involved in completing this task should be documented.
+
+
+### Hints
+
+You can find a discussion on implementing Spring Security in the [Spring Online Documentation.](https://spring.io/guides/gs/securing-web/)
  
 
 ### Due Date

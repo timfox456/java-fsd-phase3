@@ -4,4 +4,5 @@
 * [Searching for a Specific User and Updating the User Information](./UserManager) UserManager
 * [UserFeedback](./UserFeedback) UserFeedback
 * [Authentication](./Authentication) Authentication
+* [Spring Security](./SpringSecurity) Spring Security Project
 

@@ -23,6 +23,8 @@ Following requirements should be met:
 ### Hints
 
 You can find a discussion on implementing Spring Security in the [Spring Online Documentation.](https://spring.io/guides/gs/securing-web/)
+
+Here is another example that uses JSPs rather than Thymleaf: [JSP Example](https://www.baeldung.com/spring-security-login).
  
 
 ### Due Date

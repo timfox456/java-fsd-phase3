@@ -29,4 +29,26 @@ Likely additional pages for login / registration, plus welcome page.
  * Severity (drop down) (High, medium, low)
  * User (tasks should belong to a user)
 
+### SQL
 
+```sql
+use db_example;
+CREATE TABLE `task` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `description` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `end_date` datetime(6) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `severity` varchar(255) DEFAULT NULL,
+  `start_date` datetime(6) DEFAULT NULL,
+  `user_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK2hsytmxysatfvt0p1992cw449` (`user_id`),
+  CONSTRAINT `FK2hsytmxysatfvt0p1992cw449` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+use db_example;
+insert into task (description, email, start_date, end_date, name, severity, user_id) VALUES 
+("Task Description", "tim@gmail.com", '2021-03-21', '2021-03-22', "Task 1", "High", 1);
+
+```

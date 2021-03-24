@@ -5,12 +5,23 @@
 ## Project Objective:
 Create a task manager application with spring boot and spring Data JPA.
 
+
 ### Background of Problem Statement:
+
+The Task Manager is for organizing a users to-do lists.
+
+The user should be able to create, display, delete, and update her or his tasks (basically to-do items.)
+
 The application will have UI in JSP.
 
-At least 4 JSP Pages -> create task, display tasks, delete tasks, and update task.
-
-Likely additional pages for login / registration, plus welcome page.
+Suggested JSP Pages:
+ 1. create task
+ 2. display tasks
+ 3. delete tasks
+ 4. update task.
+ 5. Login
+ 6. User Registration
+ 7. Index/Welcome 
 
 ### Important Notes:
  *  Project must be well organized in packages.

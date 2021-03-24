@@ -5,7 +5,7 @@
 <h2 class="hello-title">Hello ${name}!</h2>
 
 
-<a href="users">List Users</a>
+        <p>Click <a href="hello">here</a> to see a greeting.</p>
 
 </body>
 </html>

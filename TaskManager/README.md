@@ -52,3 +52,8 @@ insert into task (description, email, start_date, end_date, name, severity, user
 ("Task Description", "tim@gmail.com", '2021-03-21', '2021-03-22', "Task 1", "High", 1);
 
 ```
+
+
+### Deadline 
+
+2021-03-30

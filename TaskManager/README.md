@@ -8,9 +8,12 @@ Create a task manager application with spring boot and spring Data JPA.
 
 ### Background of Problem Statement:
 
-The Task Manager is for organizing a users to-do lists.
+The Task Manager is for organizing tasks (or to-dos) for workers.
 
-The user should be able to create, display, delete, and update her or his tasks (basically to-do items.)
+The logged in user should be able to create, display, delete, and update tasks (basically to-do items.)
+
+Tasks are the user's own tasks. Users create and edit tasks to themselves but can neither create tasks 
+for others, reassign existing tasks to other users or even view tasks that do not belong to them.
 
 The application will have UI in JSP.
 

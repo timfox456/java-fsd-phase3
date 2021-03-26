@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+  background-color: lightblue;
+}
+
+h2.hello-title {
+  color: white;
+}
+
+
+h2.index-title {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}

@@ -1,4 +1,4 @@
-# Implement Spring Security with Authentication .
+# Implement Spring Security with Authentication.
 ## DESCRIPTION
 
 ## Project objective: 
@@ -25,9 +25,5 @@ Following requirements should be met:
 You can find a discussion on implementing Spring Security in the [Spring Online Documentation.](https://spring.io/guides/gs/securing-web/)
 
 Here is another example that uses JSPs rather than Thymleaf: [JSP Example](https://www.baeldung.com/spring-security-login).
- 
 
-### Due Date
-
-2021-03-25
 

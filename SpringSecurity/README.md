@@ -16,8 +16,6 @@ Following requirements should be met:
    * User Password style in-memory storage is acceptable but variations on this (such as storing to database) are also acceptable.
    * Users should be redirected to a login.html page if not authenticated before being redirected to the original page once authenticated.
    * A few of the source code should be tracked on GitHub repositories. You need to document the tracked  files which are ignored during the final push to the GitHub repository.
-   * The submission of your GitHub repository link  is mandatory. In order to track your task, you need to share the link of the repository in the document. 
-   * The step-by-step process involved in completing this task should be documented.
 
 
 ### Hints
